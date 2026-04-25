@@ -7,7 +7,7 @@ EDFusion formulates infrared and visible image fusion as a pixel-wise uncertaint
 Each modality is modeled with a Normal–Inverse-Gamma (NIG) distribution, enabling joint estimation of intensity and uncertainty.
 Unlike conventional deterministic fusion methods, EDFusion explicitly models reliability and uncertainty, allowing adaptive fusion under noise, illumination variation, and cross-modal inconsistency.
 
-🧠 Method
+Method
 
 EDFusion consists of three key components:
 
@@ -33,30 +33,19 @@ Structure-preserving constraints (SSIM, TV)
 📂 Code Structure
 EDFusion/
 ├── train.py        # training script
-
 ├── model.py        # evidential fusion network
-
 ├── utils.py        # loss functions and utilities
-
 ├── test.py         # testing / inference
-
 ├── data/
-
 │   ├── train/
-
 │   │   ├── ir/
-
 │   │   └── vi/
-
 │   └── test/
-
 │       ├── ir/
-
 │       └── vi/
-
 └── output/
 
-⚙️ Environment
+Environment
 Recommended environment:
 python >= 3.8
 torch >= 1.10
@@ -74,17 +63,11 @@ pip install torch torchvision numpy pillow matplotlib h5py opencv-python tensorb
 Organize dataset as:
 
 data/
-
 ├── train/
-
 │   ├── ir/
-
 │   └── vi/
-
 └── test/
-
     ├── ir/
-    
     └── vi/
     
 Notes:
@@ -125,11 +108,8 @@ Reconstruct final RGB image
 
 📤 Outputs
 test_output/
-
 ├── fused_rgb/
-
 ├── f_uncertainty_maps/
-
 └── fused_with_uncertainty/
 
 🔑 Key Features
