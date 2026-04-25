@@ -33,16 +33,27 @@ Structure-preserving constraints (SSIM, TV)
 📂 Code Structure
 EDFusion/
 ├── train.py        # training script
+
 ├── model.py        # evidential fusion network
+
 ├── utils.py        # loss functions and utilities
+
 ├── test.py         # testing / inference
+
 ├── data/
+
 │   ├── train/
+
 │   │   ├── ir/
+
 │   │   └── vi/
+
 │   └── test/
+
 │       ├── ir/
+
 │       └── vi/
+
 └── output/
 
 ⚙️ Environment
@@ -61,13 +72,21 @@ pip install torch torchvision numpy pillow matplotlib h5py opencv-python tensorb
 
 📊 Dataset
 Organize dataset as:
+
 data/
+
 ├── train/
+
 │   ├── ir/
+
 │   └── vi/
+
 └── test/
+
     ├── ir/
+    
     └── vi/
+    
 Notes:
 IR images are converted to grayscale
 VIS images can be RGB
@@ -90,12 +109,14 @@ The framework automatically saves:
 best_model.pth
 checkpoint_epoch_x.pth
 final_model.pth
+
 🧪 Testing
 python test.py \
   --ir-dir ./data/test/ir \
   --vis-dir ./data/test/vi \
   --model-path ./output/models/final_model.pth \
   --output-dir ./test_output
+  
 🎨 Color Fusion Strategy
 Convert VIS images to YCbCr space
 Perform fusion on Y channel
@@ -104,9 +125,13 @@ Reconstruct final RGB image
 
 📤 Outputs
 test_output/
+
 ├── fused_rgb/
+
 ├── f_uncertainty_maps/
+
 └── fused_with_uncertainty/
+
 🔑 Key Features
 Pixel-wise evidential learning (NIG modeling)
 Uncertainty-aware fusion mechanism
