@@ -32,17 +32,29 @@ Structure-preserving constraints (SSIM, TV)
 
 📂 Code Structure
 EDFusion/
+
 ├── train.py        # training script
+
 ├── model.py        # evidential fusion network
+
 ├── utils.py        # loss functions and utilities
+
 ├── test.py         # testing / inference
+
 ├── data/
+
 │   ├── train/
+
 │   │   ├── ir/
+
 │   │   └── vi/
+
 │   └── test/
+
 │       ├── ir/
+
 │       └── vi/
+
 └── output/
 
 Environment
@@ -64,10 +76,16 @@ Organize dataset as:
 
 data/
 ├── train/
+
 │   ├── ir/
+
+
 │   └── vi/
+
 └── test/
+
     ├── ir/
+    
     └── vi/
     
 Notes:
@@ -108,8 +126,11 @@ Reconstruct final RGB image
 
 📤 Outputs
 test_output/
+
 ├── fused_rgb/
+
 ├── f_uncertainty_maps/
+
 └── fused_with_uncertainty/
 
 🔑 Key Features
