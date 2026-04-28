@@ -151,7 +151,7 @@ Total variation (TV) loss
 📌 Citation
 @article{edfusion2026,
   title={EDFusion: Uncertainty-Aware Infrared and Visible Image Fusion via Evidential Deep Learning},
-  author={Your Name},
+  author={Dan Wu, Jin Li},
   year={2026}
 }
 
